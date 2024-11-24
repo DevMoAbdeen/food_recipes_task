@@ -1,0 +1,109 @@
+{
+  "ErrorValues": {
+    "internet_failure": "Network error. Please check your internet connection and try again.",
+    "timeout_failure": "This process has taken longer than it should, check your internet connection and try again.",
+    "empty_cache_failure": "No Internet connection and No data cached before.",
+    "wrong_input_data": "The data provided is incorrect.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "account_not_activated": "Your account is not activated.",
+    "not_found": "The requested resource was not found.",
+    "server_error": "A server error occurred. Please try again later.",
+    "unexpected_error": "An unexpected error occurred. Please try again later."
+  },
+
+  "App": {
+    "app_name": "Food Recipes",
+    "error_occurred": "An error occurred!",
+    "retry": "Retry",
+    "english": "English",
+    "arabic": "Arabic"
+  },
+
+  "Screens": {
+    "Authentication": {
+      "forget_password": "Forget Password ?",
+      "not_have_account": "Don't have an account ? ",
+      "create_new_account": "Create new account",
+      "logged_in": "Logged in successfully.",
+      "username": "User name",
+      "password": "Password",
+      "login": "Login",
+      "empty_username": "Your name can't be empty.",
+      "short_password": "Password must be at least 8 characters.",
+      "weak_password": "Write Strong password contains small and capital letters, numbers and symbols."
+    },
+
+    "PageView": {
+      "recipes": "Recipes",
+      "users": "Users",
+      "settings": "Settings",
+
+      "Recipes": {
+        "no_posts_yet": "You have no posts yet!",
+        "no_posts_here": "There are no posts here. Follow business owners to see their posts later.",
+        "be_the_first_to_post": "Be the first to share a new post with others.",
+        "no_name": "No Name",
+        "reviews": "Reviews",
+        "level": "Level: ",
+        "view_details": "View All Details",
+        "minutes": "minutes",
+        "kcal": "Kcal",
+        "servings": "Servings",
+        "ingredients": "Ingredients",
+        "instructions": "Instructions",
+        "back_to_recipes": "Back to Recipes"
+      },
+
+      "Users": {
+        "personal_information": "Personal Information",
+        "phone": "Phone",
+        "age": "Age",
+        "gender": "Gender",
+        "blood_group": "Blood Group",
+        "address_information": "Address Information",
+        "address": "Address",
+        "state": "State",
+        "postal_code": "Postal Code",
+        "bank_information": "Bank Information",
+        "card_type": "Card Type",
+        "card_expiration": "Card Expiration",
+        "iban": "IBAN",
+        "university_and_role": "University & Role",
+        "university": "University",
+        "role": "Role",
+        "crypto_information": "Crypto Information",
+        "coin": "Coin",
+        "wallet": "Wallet",
+        "network": "Network"
+      },
+
+      "Settings": {
+        "contact_info": "Contact Information",
+        "contact_with_me": "Contact with me by:",
+        "app_info": "App Information",
+        "app_description": "App Description",
+        "learn_more_about_app": "Learn more about the app",
+        "app_version": "App Version",
+        "version": "1.0.0",
+        "app_settings": "App Settings",
+        "change_language": "Change Language",
+        "choose_app_language": "Choose app language",
+        "change_theme": "Change Theme",
+        "dark_mode": "Dark Mode",
+        "support": "Support",
+        "support_and_help": "Support & Help",
+        "help_center": "Help Center",
+        "contact_us_if_problems": "Contact us if you encounter problems",
+        "terms_and_conditions": "Terms & Conditions",
+        "check_app_policy": "Check app policy",
+        "description_title": "App Description",
+        "description_content": "This is a demo application aimed at providing the best user experience through a user-friendly interface and a set of unique features.",
+        "close": "Close",
+        "github": "GitHub",
+        "whatsapp": "Whatsapp",
+        "linkedin": "LinkedIn",
+        "telegram": "Telegram"
+      }
+    }
+  }
+}

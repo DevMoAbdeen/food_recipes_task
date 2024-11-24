@@ -1,0 +1,109 @@
+{
+  "ErrorValues": {
+    "internet_failure": "خطأ في الشبكة. يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى.",
+    "timeout_failure": "لقد استغرق هذا العملية وقتًا أطول مما يجب، تحقق من اتصالك بالإنترنت وحاول مرة أخرى.",
+    "empty_cache_failure": "لا يوجد اتصال بالإنترنت، ولم يتم تخزين هذه البيانات من قبل.",
+    "wrong_input_data": "البيانات المدخلة غير صحيحة.",
+    "unauthorized": "ليس لديك صلاحية لتنفيذ هذا الإجراء.",
+    "account_not_activated": "حسابك غير مفعل.",
+    "not_found": "المورد المطلوب غير موجود.",
+    "server_error": "حدث خطأ في الخادم. يرجى المحاولة لاحقًا.",
+    "unexpected_error": "حدث خطأ غير متوقع. يرجى المحاولة لاحقًا."
+  },
+
+  "App": {
+    "app_name": "وصفات الطعام",
+    "error_occurred": "حدث خطأ!",
+    "retry": "إعادة المحاولة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+
+  "Screens": {
+    "Authentication": {
+      "forget_password": "هل نسيت كلمة المرور؟",
+      "not_have_account": "ليس لديك حساب من قبل؟",
+      "create_new_account": "إنشاء حساب جديد",
+      "logged_in": "تم تسجيل الدخول بنجاح.",
+      "username": "إسم المستخدم",
+      "password": "كلمة المرور",
+      "login": "تسجيل الدخول",
+      "empty_username": "اسمك لا يمكن أن يكون فارغاً.",
+      "short_password": "يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل.",
+      "weak_password": "اكتب كلمة مرور قوية تحتوي على أحرف إنجليزية صغيرة وكبيرة وأرقام ورموز."
+    },
+
+    "PageView": {
+      "recipes": "الوصفات",
+      "users": "المستخدمين",
+      "settings": "الإعدادات",
+
+      "Recipes": {
+        "no_posts_yet": "لا توجد منشورات لك حتى الآن!",
+        "no_posts_here": "لا توجد منشورات هنا. تابع أصحاب الأعمال لترى المنشورات لاحقًا.",
+        "be_the_first_to_post": "كن أول من يشارك منشورًا جديدًا مع الآخرين.",
+        "no_name": "بدون اسم",
+        "reviews": "مراجعة",
+        "level": "المستوى: ",
+        "view_details": "عرض كامل التفاصيل",
+        "minutes": "دقيقة",
+        "kcal": "سعرة حرارية",
+        "servings": "الحصص",
+        "ingredients": "المكونات",
+        "instructions": "التعليمات",
+        "back_to_recipes": "العودة إلى الوصفات"
+      },
+
+      "Users": {
+        "personal_information": "المعلومات الشخصية",
+        "phone": "الهاتف",
+        "age": "العمر",
+        "gender": "الجنس",
+        "blood_group": "فصيلة الدم",
+        "address_information": "معلومات العنوان",
+        "address": "العنوان",
+        "state": "الولاية",
+        "postal_code": "الرمز البريدي",
+        "bank_information": "المعلومات البنك",
+        "card_type": "نوع البطاقة",
+        "card_expiration": "تاريخ انتهاء البطاقة",
+        "iban": "رقم الحساب البنكي الدولي",
+        "university_and_role": "الجامعة والدور",
+        "university": "الجامعة",
+        "role": "الدور",
+        "crypto_information": "معلومات العملة المشفرة",
+        "coin": "العملة",
+        "wallet": "المحفظة",
+        "network": "الشبكة"
+      },
+
+      "Settings": {
+        "contact_info": "معلومات الاتصال",
+        "contact_with_me": "تواصل معي",
+        "app_info": "معلومات التطبيق",
+        "app_description": "وصف التطبيق",
+        "learn_more_about_app": "تعرف على المزيد عن التطبيق",
+        "app_version": "إصدار التطبيق",
+        "version": "1.0.0",
+        "app_settings": "إعدادات التطبيق",
+        "change_language": "تغيير اللغة",
+        "choose_app_language": "اختر لغة التطبيق",
+        "change_theme": "تغيير الثيم",
+        "dark_mode": "الوضع الداكن",
+        "support": "الدعم",
+        "support_and_help": "الدعم والمساعدة",
+        "help_center": "مركز المساعدة",
+        "contact_us_if_problems": "تواصل معنا إذا واجهتك مشاكل",
+        "terms_and_conditions": "الشروط والأحكام",
+        "check_app_policy": "اطلع على سياسة التطبيق",
+        "description_title": "وصف التطبيق",
+        "description_content": "هذا التطبيق هو تطبيق تجريبي يهدف إلى تقديم أفضل تجربة للمستخدمين من خلال واجهة سهلة الاستخدام ومجموعة من الميزات المميزة.",
+        "close": "إغلاق",
+        "github": "جيت هاب",
+        "whatsapp": "واتساب",
+        "linkedin": "لينكد إن",
+        "telegram": "تليجرام"
+      }
+    }
+  }
+}
