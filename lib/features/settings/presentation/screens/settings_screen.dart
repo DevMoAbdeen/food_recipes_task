@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/constant/app_images.dart';
@@ -83,12 +81,10 @@ class SettingsScreen extends StatelessWidget {
                   title: TranslationKeys.appVersion.translateValue(),
                   subtitle: TranslationKeys.version.translateValue(),
                   icon: Icons.verified,
-                  onTap: null, // لا شيء عند الضغط
+                  onTap: null,
                 ),
                 16.heightSpace(),
-                // قسم: إعدادات التطبيق
-                SectionTitle(
-                    text: TranslationKeys.appSettings.translateValue()),
+                SectionTitle(text: TranslationKeys.appSettings.translateValue()),
                 SettingsItem(
                   title: TranslationKeys.changeLanguage.translateValue(),
                   subtitle: TranslationKeys.chooseAppLanguage.translateValue(),
@@ -97,26 +93,21 @@ class SettingsScreen extends StatelessWidget {
                     builder: (context, state) {
                       return DropdownButton<String>(
                         style: TextStyle(color: Theme.of(context).primaryColor),
-                        value: getIt<SharedPrefController>()
-                            .getData(key: Keys.languageCode),
+                        value: getIt<SharedPrefController>().getData(key: Keys.languageCode),
                         icon: Icon(
                           Icons.keyboard_arrow_down,
                           color: Theme.of(context).primaryColor,
                         ),
-                        items: AppRouter.supportedLanguages
-                            .map((String languageCode) {
+                        items: AppRouter.supportedLanguages.map((String languageCode) {
                           return DropdownMenuItem(
                             value: languageCode,
                             child: AppText(
-                              text: context
-                                  .read<SettingsCubit>()
-                                  .getLanguageNameFromCode(languageCode),
+                              text: context.read<SettingsCubit>().getLanguageNameFromCode(languageCode),
                               fontSize: 16,
                             ),
                           );
                         }).toList(),
                         onChanged: (String? newValue) {
-                          log("Value is: $newValue");
                           context.read<SettingsCubit>().changeLanguage(context, Locale(newValue!));
                         },
                       );
@@ -135,9 +126,7 @@ class SettingsScreen extends StatelessWidget {
                         inactiveTrackColor: const Color(0xff7B7D80),
                         activeTrackColor: const Color(0xffCECECE),
                         activeColor: Theme.of(context).primaryColor,
-                        value: getIt<SharedPrefController>()
-                                .getData(key: Keys.isDarkMode) ??
-                            false,
+                        value: getIt<SharedPrefController>().getData(key: Keys.isDarkMode) ?? false,
                         onChanged: context.read<SettingsCubit>().toggleTheme,
                       ),
                     );
@@ -146,29 +135,18 @@ class SettingsScreen extends StatelessWidget {
                 ),
 
                 16.heightSpace(),
-                AppText(
-                  text: TranslationKeys.support.translateValue(),
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-                SectionTitle(
-                    text: TranslationKeys.supportAndHelp.translateValue()),
+                SectionTitle(text: TranslationKeys.supportAndHelp.translateValue()),
                 SettingsItem(
                   title: TranslationKeys.helpCenter.translateValue(),
-                  subtitle:
-                      TranslationKeys.contactUsIfProblems.translateValue(),
+                  subtitle: TranslationKeys.contactUsIfProblems.translateValue(),
                   icon: Icons.help_center,
-                  onTap: () {
-                    // فتح مركز المساعدة
-                  },
+                  onTap: () {},
                 ),
                 SettingsItem(
                   title: TranslationKeys.termsAndConditions.translateValue(),
                   subtitle: TranslationKeys.checkAppPolicy.translateValue(),
                   icon: Icons.policy,
-                  onTap: () {
-                    // عرض الشروط والأحكام
-                  },
+                  onTap: () {},
                 ),
               ],
             ),
@@ -195,7 +173,6 @@ class SectionTitle extends StatelessWidget {
   }
 }
 
-// نافذة وصف التطبيق
 class AppDescriptionDialog extends StatelessWidget {
   const AppDescriptionDialog({super.key});
 
